@@ -9,3 +9,9 @@
 
 # Can I get a copy of the host file?
 <br> Personal meet ups are required. The host file will be encrypted and converted to c++. Send me a pm.
+
+# How long will it take to finish?
+<br> In my own opion, it will take a few years.
+
+# Will the project ever be fully release(including the host file)?
+<br> Yes, I will eventually release the source code for all the files.
