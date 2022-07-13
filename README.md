@@ -6,3 +6,6 @@
 
 # Where is the host file?
 <br> For my own security, the host file will not be uploaded as, it may open up vulnerabilties and cause trouble with law enforcment(depends on what was talked). I didn't start this project for fun, more for self protection. Encryption methods will be later added(probs 256 bit) for even more security.
+
+# Can I get a copy of the host file?
+<br> Personal meet ups are required. The host file will be encrypted and converted to c++. Send me a pm.
