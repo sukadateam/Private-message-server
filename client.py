@@ -1,9 +1,9 @@
 import socket
-from functions import *
 host=None
 port=None
 s=None
-
+im
+forceQuit='Exit'
 def SetConnection():
     global host, port, s
     #host = '192.168.1.93' #For a lan connection, use the router assigned ip address from the host computer(host.py file ip).
@@ -16,16 +16,25 @@ def Main():
 def SendMessages():
     message=''
     firstMessage=True
-    while message != "!EMEXIT!":
+    while message != forceQuit:
         SetConnection()
         global host, port, s
-        s.connect((host,port))
+        try:
+            s.connect((host,port))
+        except ConnectionRefusedError:
+            print('Could not resolve connection failure. You might of/be, (1)Entered the wrong password, (2)Assigned the wrong port, or (3)To cute for me')
+            message=forceQuit
+            break
         if firstMessage==False:
             message=input('Speak Your Mind: ')
         if firstMessage==True:
             message=input('Enter Password: ')
             firstMessage=False
         arr = bytes(message, 'utf-8')
-        s.send(arr)
+        try:
+            s.send(arr)
+        except BrokenPipeError:
+            print('The server seems to be offline!')
+            message=forceQuit
 if __name__ == '__main__':
     Main()
