@@ -1,11 +1,15 @@
 import socket
+#Temp vars. These do not hold any value yet.
+#Used to allow global functions to operate
 host=None
 port=None
 s=None
 host1=None
 port1=None
 v=None
+#End of Temp vars.
 from settings import testExpermintalFeatures
+from DestroyClient import *
 import os
 #host = '192.168.1.93' #For a lan connection, use the router assigned ip address from the host computer(host.py file ip).
 #For a ota connection, use the hosts router public ip address. If no connection is made, then the host may need to open ports, and/or disable firewalls.
@@ -13,56 +17,20 @@ hostIP="127.0.0.1"
 
 #Entering this command will kill the session!! Change to something memorable and easy to execute.
 forceQuit='Exit'
-import threading
 
-##
-def SetKillConnection():
-    global host1, port1, v, hostIP
-    host=hostIP
-    port = 8081
-    v = socket.socket()
-    v.connect((host,port))
-    v.listen(1)
-    c, addr = v.accept()
-    data = c.recv(1024)
-    if data=="SelfTermination":
-        KillConnection()
-
-def KillConnection():
-    global host1, port1, v
-    s.close()
-    os.system('clear')
-    os.system('reset')
-#
-class MyThread(threading.Thread):
-    def __init__(self, *args, **kwargs):
-        super(MyThread, self).__init__(*args, **kwargs)
-        self._stop = threading.Event()
-    def stop(self):
-        self._stop.set()
-    def stopped(self):
-        return self._stop.isSet()
-    def run(self):
-        global host1, port1, v, hostIP
-        host=hostIP
-        port = 8081
-        v = socket.socket()
-        v.connect((host,port))
-        v.listen(1)
-        c, addr = v.accept()
-        data = c.recv(1024)
-        if data=="SelfTermination":
-            KillConnection()
-t1=MyThread()
 def SetConnection():
     global host, port, s, hostIP
     host=hostIP
     port = 8080
     s = socket.socket()
 def Main():
-    global testExpermintalFeatures
-    if testExpermintalFeatures == True:
-        t1.start()
+    preMessage()
+def preMessage():
+    global host, port, s
+    SetConnection()
+    s.connect((host,port))
+    arr = bytes('LoginAttempt', 'utf-8')
+    s.send(arr)
     SendMessages()
 def SendMessages():
     message=''
@@ -89,4 +57,7 @@ def SendMessages():
             message=forceQuit
     #os.system('clear') #May remove
 if __name__ == '__main__':
+    if testExpermintalFeatures == True:
+        from DestroyClient import *
+    DestroyClient.listen()
     Main()
