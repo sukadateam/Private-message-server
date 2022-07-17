@@ -9,6 +9,7 @@ host1=None
 port1=None
 v=None
 passw=None
+lastMessage=None
 #End of Temp vars.
 from settings import testExpermintalFeatures
 from DestroyClient import *
@@ -21,7 +22,7 @@ print("To use a termination command enter the word with a slash next to it. Ex: 
 hostIP="127.0.0.1"
 
 #Entering this command will kill the session!! Change to something memorable and easy to execute.
-forceQuit='Exit'
+forceQuit='Exit!!'
 
 def SetConnection():
     global host, port, s, hostIP
@@ -35,15 +36,16 @@ def preMessage():
     SetConnection()
     try:
         s.connect((host,port))
-        arr = bytes('LoginAttempt', 'utf-8')
+        arr = password_encrypt(message='LoginAttempt'.encode(), password=passw)
         s.send(arr)
         SendMessages()
     except ConnectionRefusedError:
-        print('Could not resolve connection failure. You might of\n (1)Entered the wrong password\n (2)Assigned the wrong port\n (3)Been to cute for me to handle!')
+        print('Could not resolve: Connection Failure. You might of\n (1)Entered the wrong password\n (2)Assigned the wrong port\n (3)Been to cute for me to handle!')
 def SendMessages():
     message=''
     firstMessage=True
-    while message != forceQuit:
+    global lastMessage
+    while message != forceQuit: #Runs until message = forceQuit
         SetConnection()
         global host, port, s
         try:
@@ -54,19 +56,23 @@ def SendMessages():
             break
         if firstMessage==False:
             message=input('Speak Your Mind: ')
+            if message == "reSendLast/":
+                message = lastMessage
+            else: 
+                lastMessage=message
         elif firstMessage==True:
             message=input('Enter Password: ')
             firstMessage=False
-        arr = bytes(message, 'utf-8')
+        arr = password_encrypt(message=message.encode(), password=passw)
         try:
             s.send(arr)
-        except BrokenPipeError:
+        except BrokenPipeError: 
             print('The server seems to be offline!')
             message=forceQuit
     #os.system('clear') #May remove
 if __name__ == '__main__':
     #Used to keep messages private ota
-    passw=input("Enter the encryption password: ")
+    passw=input("Please do not keep the password in your clipboard!!\nEnter the encryption password: ")
     os.system('clear') #Clears the terminal to enusre the password is no longer visable 
     if testExpermintalFeatures == True:
         from DestroyClient import *

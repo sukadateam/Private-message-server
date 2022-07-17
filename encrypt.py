@@ -39,4 +39,4 @@ def password_decrypt(token: bytes, password: str) -> bytes:
 
 #Token is the encrypted password.
 #Run this to decrypt
-#password_decrypt(token=message.encode(), password=passw)
+#password_decrypt(token=message.decode(), password=passw)

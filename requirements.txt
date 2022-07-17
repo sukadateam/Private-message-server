@@ -1,1 +1,12 @@
-rsa
+cryptography
+pyAesCrypt
+pillow
+pynput
+pandas
+pybind11 #Might remove
+cython
+python-barcode
+pypiwin32
+screeninfo
+numby
+git #Temp

@@ -1,3 +1,16 @@
 /.DS_Store
 /host.py
 notes.txt
+__pycache__/count.cpython-310.pyc
+__pycache__/custom_database.cpython-310.pyc
+__pycache__/data_save.cpython-310.pyc
+__pycache__/directory.cpython-310.pyc
+__pycache__/encrypt.cpython-39.pyc
+__pycache__/encrypt.cpython-310.pyc
+__pycache__/get_directory.cpython-310.pyc
+__pycache__/history_desc.cpython-310.pyc
+__pycache__/settings.cpython-310.pyc
+__pycache__/version_config.cpython-310.pyc
+__pycache__/encrypt.cpython-39.pyc
+__pycache__/encrypt.cpython-39.pyc
+.gitignore

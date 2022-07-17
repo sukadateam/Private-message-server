@@ -1,0 +1,24 @@
+1. clear.normal() function has been swapped to a cleaner usage type. custom_database.py
+
+2. Fixed an idendation error causing save_in_txtFile.logs() to not work as expected all the time.
+
+3. Added Feature to save_in_txtFile.logs():
+    If nothing is to be written to the text file. The text file will now create a message with the following...
+        There doesn't seem to be anything here. If you feel that this is incorrect or that data loss has occurred.
+        Please mark and issue on GitHub and attempt to do a restore from a backup file. Backups are stored
+        in the backup folder:
+
+4. max_length argument is no longer in use. To use set DecodeMethod to False.
+
+5. Added a function in app.py called buttons.update_now() and options.update_now():
+    This function will utilize my new auto update feature.
+    A Valid Internet connection is required.
+    Terminal Acces is required(runs in background).
+
+6. Added New files for new auto update feature:
+    "UpdateComannds.py":
+        Informs systenm on which components to update.
+    "UpdateProgram.py":
+        Grabs the latest version from github and installs it to the application.
+
+7. -release argument now bundles the UpdateProgram within it's zipped contents.
