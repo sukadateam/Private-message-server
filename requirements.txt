@@ -1,4 +1,5 @@
 cryptography
+<<<<<<< HEAD
 pyAesCrypt
 pillow
 pynput
@@ -10,3 +11,5 @@ pypiwin32
 screeninfo
 numby
 git #Temp
+=======
+>>>>>>> 94d6ffafa65c95c88b357703d7cd2055d6e3ba2d
