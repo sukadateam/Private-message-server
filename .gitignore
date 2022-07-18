@@ -14,3 +14,4 @@ __pycache__/version_config.cpython-310.pyc
 __pycache__/encrypt.cpython-39.pyc
 __pycache__/encrypt.cpython-39.pyc
 .gitignore
+history.txt
