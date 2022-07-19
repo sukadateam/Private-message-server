@@ -87,3 +87,170 @@ File created: 07/17/2022
 (07/17/2022) check_settingsImproved(): Run
 (07/17/2022) check_settings(): Run
 (07/17/2022) profanityFilter.setup(): Run
+(07/18/2022) logic.gate.not_gate(): Run
+(07/18/2022) check_settingsImproved(): Run
+(07/18/2022) check_settings(): Run
+(07/18/2022) profanityFilter.setup(): Run
+(07/18/2022) logic.gate.not_gate(): Run
+(07/18/2022) check_settingsImproved(): Run
+(07/18/2022) check_settings(): Run
+(07/18/2022) profanityFilter.setup(): Run
+(07/18/2022) logic.gate.not_gate(): Run
+(07/18/2022) check_settingsImproved(): Run
+(07/18/2022) check_settings(): Run
+(07/18/2022) profanityFilter.setup(): Run
+(07/18/2022) Create Database: UserLogging
+(07/18/2022) profanityFilter.filter(): Run
+(07/18/2022) profanityFilter.setup(): Run
+(07/18/2022) logic.gate.not_gate(): Run
+(07/18/2022) check_settingsImproved(): Run
+(07/18/2022) check_settings(): Run
+(07/18/2022) profanityFilter.setup(): Run
+(07/18/2022) Create Database: UserLogging
+(07/18/2022) profanityFilter.filter(): Run
+(07/18/2022) Add column: Ip Address
+(07/18/2022) check_input(): Run
+(07/18/2022) profanityFilter.filter(): Run
+(07/18/2022) Error: database_does_not_exist
+(07/18/2022) Add column: Text
+(07/18/2022) check_input(): Run
+(07/18/2022) profanityFilter.filter(): Run
+(07/18/2022) Error: database_does_not_exist
+(07/18/2022) Add column: Time
+(07/18/2022) check_input(): Run
+(07/18/2022) profanityFilter.filter(): Run
+(07/18/2022) Error: database_does_not_exist
+(07/18/2022) Add column: Date
+(07/18/2022) check_input(): Run
+(07/18/2022) profanityFilter.filter(): Run
+(07/18/2022) Error: database_does_not_exist
+(07/18/2022) check_input(): Run
+(07/18/2022) profanityFilter.setup(): Run
+(07/18/2022) logic.gate.not_gate(): Run
+(07/18/2022) check_settingsImproved(): Run
+(07/18/2022) check_settings(): Run
+(07/18/2022) profanityFilter.setup(): Run
+(07/18/2022) Create Database: UserLogging
+(07/18/2022) profanityFilter.filter(): Run
+(07/18/2022) Add column: Ip Address
+(07/18/2022) check_input(): Run
+(07/18/2022) profanityFilter.filter(): Run
+(07/18/2022) Error: database_does_not_exist
+(07/18/2022) Add column: Text
+(07/18/2022) check_input(): Run
+(07/18/2022) profanityFilter.filter(): Run
+(07/18/2022) Error: database_does_not_exist
+(07/18/2022) Add column: Time
+(07/18/2022) check_input(): Run
+(07/18/2022) profanityFilter.filter(): Run
+(07/18/2022) Error: database_does_not_exist
+(07/18/2022) Add column: Date
+(07/18/2022) check_input(): Run
+(07/18/2022) profanityFilter.filter(): Run
+(07/18/2022) Error: database_does_not_exist
+(07/18/2022) check_input(): Run
+(07/18/2022) profanityFilter.setup(): Run
+(07/18/2022) logic.gate.not_gate(): Run
+(07/18/2022) check_settingsImproved(): Run
+(07/18/2022) check_settings(): Run
+(07/18/2022) profanityFilter.setup(): Run
+(07/18/2022) Create Database: userlogging
+(07/18/2022) profanityFilter.filter(): Run
+(07/18/2022) check_input(): Run
+(07/18/2022) Add column: Ip Address
+(07/18/2022) check_input(): Run
+(07/18/2022) profanityFilter.filter(): Run
+(07/18/2022) Add column: Text
+(07/18/2022) check_input(): Run
+(07/18/2022) profanityFilter.filter(): Run
+(07/18/2022) Add column: Time
+(07/18/2022) check_input(): Run
+(07/18/2022) profanityFilter.filter(): Run
+(07/18/2022) Add column: Date
+(07/18/2022) check_input(): Run
+(07/18/2022) profanityFilter.filter(): Run
+(07/18/2022) check_input(): Run
+(07/19/2022) profanityFilter.setup(): Run
+(07/19/2022) logic.gate.not_gate(): Run
+(07/19/2022) check_settingsImproved(): Run
+(07/19/2022) check_settings(): Run
+(07/19/2022) profanityFilter.setup(): Run
+(07/19/2022) Create Database: userlogging
+(07/19/2022) profanityFilter.filter(): Run
+(07/19/2022) check_input(): Run
+(07/19/2022) Add column: ip address
+(07/19/2022) check_input(): Run
+(07/19/2022) profanityFilter.filter(): Run
+(07/19/2022) Add column: text
+(07/19/2022) check_input(): Run
+(07/19/2022) profanityFilter.filter(): Run
+(07/19/2022) Add column: time
+(07/19/2022) check_input(): Run
+(07/19/2022) profanityFilter.filter(): Run
+(07/19/2022) Add column: date
+(07/19/2022) check_input(): Run
+(07/19/2022) profanityFilter.filter(): Run
+(07/19/2022) check_input(): Run
+(07/19/2022) profanityFilter.setup(): Run
+(07/19/2022) logic.gate.not_gate(): Run
+(07/19/2022) check_settingsImproved(): Run
+(07/19/2022) check_settings(): Run
+(07/19/2022) profanityFilter.setup(): Run
+(07/19/2022) Create Database: userlogging
+(07/19/2022) profanityFilter.filter(): Run
+(07/19/2022) check_input(): Run
+(07/19/2022) Add column: ip address
+(07/19/2022) check_input(): Run
+(07/19/2022) profanityFilter.filter(): Run
+(07/19/2022) Add column: text
+(07/19/2022) check_input(): Run
+(07/19/2022) profanityFilter.filter(): Run
+(07/19/2022) Add column: time
+(07/19/2022) check_input(): Run
+(07/19/2022) profanityFilter.filter(): Run
+(07/19/2022) Add column: date
+(07/19/2022) check_input(): Run
+(07/19/2022) profanityFilter.filter(): Run
+(07/19/2022) check_input(): Run
+(07/19/2022) profanityFilter.setup(): Run
+(07/19/2022) logic.gate.not_gate(): Run
+(07/19/2022) check_settingsImproved(): Run
+(07/19/2022) check_settings(): Run
+(07/19/2022) profanityFilter.setup(): Run
+(07/19/2022) Create Database: userlogging
+(07/19/2022) profanityFilter.filter(): Run
+(07/19/2022) check_input(): Run
+(07/19/2022) Add column: ip address
+(07/19/2022) check_input(): Run
+(07/19/2022) profanityFilter.filter(): Run
+(07/19/2022) Add column: text
+(07/19/2022) check_input(): Run
+(07/19/2022) profanityFilter.filter(): Run
+(07/19/2022) Add column: time
+(07/19/2022) check_input(): Run
+(07/19/2022) profanityFilter.filter(): Run
+(07/19/2022) Add column: date
+(07/19/2022) check_input(): Run
+(07/19/2022) profanityFilter.filter(): Run
+(07/19/2022) check_input(): Run
+(07/19/2022) profanityFilter.setup(): Run
+(07/19/2022) logic.gate.not_gate(): Run
+(07/19/2022) check_settingsImproved(): Run
+(07/19/2022) check_settings(): Run
+(07/19/2022) profanityFilter.setup(): Run
+(07/19/2022) Create Database: userlogging
+(07/19/2022) profanityFilter.filter(): Run
+(07/19/2022) check_input(): Run
+(07/19/2022) Add column: ip address
+(07/19/2022) check_input(): Run
+(07/19/2022) profanityFilter.filter(): Run
+(07/19/2022) Add column: text
+(07/19/2022) check_input(): Run
+(07/19/2022) profanityFilter.filter(): Run
+(07/19/2022) Add column: time
+(07/19/2022) check_input(): Run
+(07/19/2022) profanityFilter.filter(): Run
+(07/19/2022) Add column: date
+(07/19/2022) check_input(): Run
+(07/19/2022) profanityFilter.filter(): Run
+(07/19/2022) check_input(): Run
