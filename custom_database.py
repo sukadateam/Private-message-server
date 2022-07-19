@@ -157,6 +157,12 @@ if python_version() in required_version or "-skipPythonCheck" in n:
         if debug==True:
             print("Could not retrieve screen Width")
         return False
+    #Returns vars, and other needed stuff.
+    class returns:
+        def debug():
+            #Allows for debug variable to operations out side of global decleration.
+            global debug
+            return debug
     def assignBarcodesToItemsWithout():
         #Adds called function to history.
         history.create_history('Run', 'assignBarcodesToItemsWithout()', hide=debug)
